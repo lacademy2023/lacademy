@@ -1,0 +1,40 @@
+/* Your general styles go here */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fa0000;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  
+  .about-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  /* Your other custom styles go here */  
