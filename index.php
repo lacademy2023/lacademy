@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>LITSURE ACADEMY</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      
+        background-color: #233;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+  
+    .hero-section {
+  display: flex;
+}
+.hero-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-container {
+  flex: 0 5 auto;
+}
+    
+    .hero-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-section p {
+      font-size: 24px;
+    }
+    
+    .features-section {
+      background-color: #f4f4f4;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .features-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .feature-box {
+      display: inline-block;
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      text-align: left;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-box h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .feature-box p {
+      font-size: 16px;
+    }
+    
+    footer {
+      background-color: #233;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  /* Base styles for feature boxes */
+.features-section {
+  text-align: center;
+}
+
+.feature-box {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Custom styling for course cards */
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.course-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Remove underlines from links */
+.course-card a {
+  text-decoration: none;
+  color: #337ab7;
+  cursor: pointer;
+}
+/* Base styles for contact section */
+.contact-section {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style for the "FOR ADMISSION CONTACT" heading */
+.contact-section h2 {
+  font-size: 27px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Style for the contact link */
+.contact-link {
+  display: inline-block;
+  font-size: 28px;
+  color: #337ab7;
+  text-decoration: none;
+  border: 1px solid #337ab7;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+  nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+   
+  .store {
+  height: 100px;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff00cc, #3333cc);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.store::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.store:hover::before {
+  animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+
+
+button {
+  padding: 12px 20px;
+  background-color: rgb(5, 202, 182);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: rgb(5, 202, 182);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+/* CSS code for the hero-pro section */
+.hero-pro {
+  /* Set the background image and style properties */
+  background-image: url('path/to/your/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 220px; /* Set an appropriate height for the section */
+
+  /* Add padding to create some spacing around the content */
+  padding: 0px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-heading {
+  animation: pulse 2s infinite;
+}
+
+
+</style>
+
+</head>
+<body>
+  <header>
+  <h1 class="animated-heading">LITSURE ACADEMY</h1>  </header>
+  
+<nav>
+  <ul>
+    <li><button onclick="goToPage('index.php')">HOME</button></li>
+    <li><button onclick="goToPage('protected_page.php')">PREMIUM</button></li>
+    <li><button onclick="goToPage('about.php')">ABOUT</button></li>
+    <li><button onclick="goToPage('contact.php')">CONTACT</button></li>
+  </ul>
+</nav>
+
+<script>
+  function goToPage(url) {
+    window.location.href = url;
+  }
+</script>
+
+
+
+  <section class="hero-pro">
+  <img src="images/litsure.png" alt="LA" height="220px" width=100%>
+</section>
+
+  <div class="image-container">
+  
+  </div>
+</section>
+
+<section class="features-section">
+  <h2>Select Courses</h2>
+  <div class="feature-box">
+    <a href="register_form.php">
+      <div class="course-card">
+        <h3>SET ENGLISH PAPER 2 COACHING</h3>
+        <p>Enroll now and enhance your English skills for SET Paper 2.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="feature-box">
+    <a href="register_form.php">
+      <div class="course-card">
+        <h3>SET GENERAL PAPER 1 COACHING</h3>
+        <p>Join our coaching to excel in SET General Paper 1.</p>
+      </div>
+    </a>
+  </div>
+</section>
+<div class="store">
+  <a href="https://youtube.com/@litsureacademy"><h1>Watch Content Videos On SET </h1></a>
+</div>
+
+<div class="store">
+ <a href="register_form.php"> <h1>Practice MCQ </h1></a>
+</div><BR>
+<section class="contact-section">
+  <h2>FOR ADMISSION CONTACT</h2>
+  <a href="tel:7306639107" class="contact-link">Phone: 7306639107 </a>
+</section>
+
+
+<br><br><br>
+  <footer>
+    <p>&copy; 2023 Litsure Academy. All rights reserved.</p>
+    
+  </footer>
+</body>
+</html>
